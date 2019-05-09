@@ -74,7 +74,9 @@ namespace MTConnect.Types
                     }
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) {
+                Debug.Logger.ConsoleWrite(ex);
+            }
 
             return null;
         }

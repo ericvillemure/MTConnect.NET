@@ -40,7 +40,7 @@ namespace MTConnect.MTConnectAssets
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Debug.Logger.ConsoleWrite(ex);
             }
 
             return null;

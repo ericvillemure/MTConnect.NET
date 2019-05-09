@@ -12,11 +12,6 @@ MTConnect.NET is a .NET library for the [MTConnect®](http://www.mtconnect.org) 
 
 # Installation
 
-## Nuget
-**PM> Install-Package MTConnect.NET**
-
-http://www.nuget.org/packages/MTConnect.NET/
-
 # Examples
 
 ## MTConnectClient
@@ -152,6 +147,12 @@ var cn1 = document.DeviceStreams[0].ComponentStreams.Find(o => o.ComponentId == 
 var htemp = document.DeviceStreams[0].Conditions.Find(o => o.DataItemId == "htemp");
 if (htemp != null) Console.WriteLine(htemp.ConditionValue + " : " + htemp.CDATA);
 ```
+# AppSettings
 
-## License
+A setting has been added to control whether or not errors are written to the console.  This is a breaking change from TrakHound's original library because the default behavior is now to prevent error messages to be written to the console.  To reenable it the following setting needs to be set.
+
+## EnableConsoleWrite
+This setting controls whether or not errors are written to the console.  Default: false
+
+# License
 This library is licensed under the Apache 2.0 License

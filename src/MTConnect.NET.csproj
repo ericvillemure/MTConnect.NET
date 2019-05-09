@@ -42,20 +42,19 @@
       <HintPath>packages\RestSharp.105.2.3\lib\net4\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http">
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clients\Asset.cs" />
     <Compile Include="Clients\Current.cs" />
     <Compile Include="Clients\SampleRange.cs" />
+    <Compile Include="Debug\Logger.cs" />
     <Compile Include="Delegates.cs" />
     <Compile Include="Clients\MTConnectClient.cs" />
     <Compile Include="Clients\Probe.cs" />
