@@ -12,6 +12,9 @@ MTConnect.NET is a .NET library for the [MTConnect®](http://www.mtconnect.org) 
 
 # Installation
 
+## Nuget
+Unfortunately NuGet cannot be used with this fork since the original NuGet packages is managed by TrakHound.
+
 # Examples
 
 ## MTConnectClient
